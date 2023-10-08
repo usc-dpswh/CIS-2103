@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package employee.version3;
+package employee.version4;
 
+import employee.version3.*;
 import employee.version3.*;
 import java.time.LocalDate;
 
@@ -69,6 +70,6 @@ public class HourlyEmployee extends Employee {
         super.displayInfo();
         System.out.printf("Total hours worked: %.2f\n", getTotalHoursWorked());
         System.out.printf("Rate per hour: %.2f\n", getRatePerHour());
-        System.out.printf("Salary: %.2f\n", computeSalary());
+        System.out.printf("Salary: %.2f\n\n", computeSalary());
     }
 }

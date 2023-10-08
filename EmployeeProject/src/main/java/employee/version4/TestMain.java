@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package employee.version3;
+package employee.version4;
 
+import employee.version3.*;
 import java.time.LocalDate;
 
 /**
@@ -15,6 +16,9 @@ public class TestMain {
 
     public static void main(String[] args) {
        
+        EmployeeRoster PowerRangers = new EmployeeRoster();
+        EmployeeRoster Search = new EmployeeRoster();
+        
 //      New name instances
         Name name1 = new Name()
                 .firstName("Achille")
@@ -66,6 +70,16 @@ public class TestMain {
         Carlo.displayInfo();
         Xander.displayInfo();
         Dianne.displayInfo();
+        
+        PowerRangers.addEmployee(Julz);
+        PowerRangers.addEmployee(Carlo);
+        PowerRangers.addEmployee(Xander);
+        PowerRangers.addEmployee(Dianne);
+        
+        PowerRangers.displayEmployeeByType("H");
+        PowerRangers.displayEmployeeByType("C");
+        PowerRangers.displayEmployeeByType("B");
+        PowerRangers.displayEmployeeByType("P");
     }
 
 }

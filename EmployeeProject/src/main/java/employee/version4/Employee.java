@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package employee.version3;
+package employee.version4;
 
+import employee.version3.*;
 import java.time.LocalDate;
 
 /**
@@ -71,6 +72,7 @@ public class Employee {
         System.out.printf("Employee ID: %d\n", getEmpID());
         System.out.printf("Date Hired: %s\n", getEmpDateHired());
         System.out.printf("Date of Birth: %s\n", getEmpBirthDate());
+        System.out.printf("\n");
     }
 
     @Override
@@ -78,6 +80,10 @@ public class Employee {
         return String.format(
                 "Employee Name: %s\nEmployee ID: %d\nDate Hired: %s\nDate of Birth: %s\n",
                 getEmpName(), getEmpID(), getEmpDateHired(), getEmpBirthDate());
+    }
+
+    void updateName(String prefix, String firstName, String middleName, String lastName, String suffix) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }
